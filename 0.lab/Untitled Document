@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{	
+	int k;
+	char *s1,char *s2;
+	printf("string 1");
+	scanf("%s",s1);
+	printf("string 2");
+	scanf("%s",s2);
+	k=

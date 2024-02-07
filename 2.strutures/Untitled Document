@@ -1,0 +1,46 @@
+#include<stdio.h>
+struct cat
+{
+	char name[100];
+	char breed[100];
+	int age;
+}
+struct dog
+{	
+	char name[100];
+	char breed[100];
+	int age;
+}
+struct petshop
+{
+	char owner[100];
+	struct cat c[10];
+	struct dog d[10];
+}
+void main()
+{
+	int i,n,m
+	printf("nof of cats");
+	scanf("%d",&n);
+	printf("no of dogs");
+	scanf("%d",&m);
+	struct petshop p;
+	printf("owner");
+	scanf("%s",p.owner);
+	printf("enter cats detais");
+	for(i=0;i<n;i++)
+	{
+		scanf("%s",p.c[i].name);
+		scanf("%s",p.c[i].breed);
+		scanf("%d"&p.c[i].age);
+	}
+	for(i=0;i<m;i++)
+	{
+		scanf("%s",p.d[i].name);
+		scanf("%s",p.d[i].breed);
+		scanf("%d"&p.d[i].age);
+	}
+	printf("choose\n1.cat\n2.dag\n");
+	scanf("%d",op);
+	switch(op)
+	{
